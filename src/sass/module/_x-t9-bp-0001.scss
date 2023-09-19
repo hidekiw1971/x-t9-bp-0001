@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.x-t9-bp-0001 {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        // 
+    }
+}
+
+.x-t9-pb-0001_padding {
+
+    display: block;
+    background: rgba(255, 105, 180, 1);
+
+    // 
+    @include mq(md) {
+        width: 50%;
+        padding-top: 33.3%;
+        position: relative;
+        overflow: hidden;
+        // 
+    }
+}
+
+.x-t9-bp-0001_wrapper {
+    display: block;
+    padding: rem(10);
+
+    @include mq(md) {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translatey(-50%);
+        // 
+    }
+}
+
+.x-t9-bp-0001 figure {
+    @include mq(md) {
+        display: block;
+        width: 50%;
+        // 
+    }
+}
